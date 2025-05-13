@@ -1,0 +1,135 @@
+<!--
+How to Make a Contact Us Page Using HTML and CSS
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>about us</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			overflow-x: none;
+		}
+		.main{
+			margin: 150px;
+			margin-left: 400px;
+			display: flex;
+			gap: 40px;
+			align-items: center;
+
+		}
+		.left{
+			display: flex;
+			flex-direction: column;
+			width: 30%;
+			background-color: lightblue;
+			padding: 10px;
+		}
+		.right{
+			padding: 10px;
+			width: 100%;
+			text-align: left;
+		}
+		.right h1{
+			margin-left: 20px;
+		}
+		.left div{
+			flex: 1;
+			text-align: center;
+			margin: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.right input{
+			display: block;
+			width: 60%;
+			padding: 10px;
+			margin: 8px;
+		}
+		.right textarea{
+			display: block;
+			width: 400px;
+			height: 300px;
+		}
+		.sendbtn{
+			padding: 10px; 
+			margin: 10px; 
+			width:50%;
+			background-color: lightblue;
+			border: none;
+			box-shadow: 0 0 3px 3px darkcyan;
+		}
+		.header{
+			padding: 20px;
+			display: flex;
+			justify-content: space-around;
+			background-color: black;
+			color: goldenrod;
+		}
+		.header ul li{
+			list-style: none;
+			display: inline-block;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.header ul li:hover{
+			padding: 10px;
+			background-color: darkcyan;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<p>codeMentor</p>
+		<nav>
+			<ul>
+				<li>lin1</li>
+				<li>lin2</li>
+				<li>lin3</li>
+				<li>lin4</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="main">
+		<div class="left">
+			<div>
+				<div>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<div>
+					<i class="fa fa-address-book" aria-hidden="true"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<div>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<h1>Send Us Message</h1>
+			<hr style="width: 20%; margin-left: 20px; border: 1px solid darkblue;">
+			<div style="padding: 10px; text-align:left;">
+				<form>
+					<input type="text" name="name" placeholder="Enter your Name!"required>
+					<input type="email" name="email" placeholder="Enter Your Email"required>
+					<textarea style="margin-left: 10px;"required>
+						Enter Your Message here!
+					</textarea>
+					<button class="sendbtn" type="submit">
+						send Message
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
